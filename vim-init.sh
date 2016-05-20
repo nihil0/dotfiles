@@ -12,6 +12,5 @@ cd ~/.vim/bundle && git clone https://github.com/powerline/powerline.git
 #Install jedi-vim
 cd ~/.vim/bundle/ && git clone --recursive https://github.com/davidhalter/jedi-vim.git
 
-#Get my vimrc
-git clone https://gist.github.com/9696e2bebca74c270f66.git ~/foo
-cd ~/foo && mv .vimrc ../ && cd .. & rm -rf foo
+#Clean up
+cd .. && mv dotfiles/* dotfiles/.* ~/ && rm -rf dotfiles
