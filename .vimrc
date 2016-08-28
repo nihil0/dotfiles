@@ -123,13 +123,6 @@ set shiftwidth=4
 set shiftround
 set expandtab
 
-" ================ End Stupidity ===========================
-" Disable stupid backup and swap files - they trigger too many events
-" for file system watchers
-set nobackup
-set nowritebackup
-set noswapfile
-
 " ================ Plugin Manager ===========================
 " Setup Pathogen to manage your plugins
 "mkdir -p ~/.vim/autoload ~/.vim/bundle
@@ -150,6 +143,9 @@ colorscheme solarized
 
  " ================ Recommended Settings for Latex-Suite ===========================
 
+ " So latex can be called correctly
+ set shellslash
+
  " IMPORTANT: grep will sometimes skip displaying the file name if you
  " search in a singe file. This will confuse Latex-Suite. Set your grep
  " program to always generate a file-name.
@@ -165,4 +161,9 @@ colorscheme solarized
  " =================== NERDTree and Airline ========================
  
  set laststatus=2
- 
+
+ " ================== Paste functionality in GVim ==================
+if has("gui_running")
+    map  <silent>  <S-Insert>  "+p
+    imap <silent>  <S-Insert>  <Esc>"+pa
+endif
