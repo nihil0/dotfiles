@@ -21,4 +21,4 @@ mv jedi-vim ~/.vim/bundle/
 cp -r ftplugin ~/.vim/ 
  
 #Clean up
-rm -rf dotfiles
+rm -rf ~/dotfiles
