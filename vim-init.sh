@@ -4,13 +4,13 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 # Setup solarized colors
-cd ~/.vim/bundle && git clone git://github.com/altercation/vim-colors-solarized.git
+git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle
 
 #Install powerline
-cd ~/.vim/bundle && git clone https://github.com/powerline/powerline.git
+git clone https://github.com/powerline/powerline.git ~/.vim/bundle
 
 #Install jedi-vim
-cd ~/.vim/bundle/ && git clone --recursive https://github.com/davidhalter/jedi-vim.git
+git clone --recursive https://github.com/davidhalter/jedi-vim.git ~/.vim/bundle
 
 #Clean up
-cd .. && mv dotfiles/* dotfiles/.* ~/ && rm -rf dotfiles
+rm -rf dotfiles
