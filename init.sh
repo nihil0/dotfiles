@@ -2,7 +2,6 @@
 cp .tmux.conf ~/
 cp .vimrc ~/
 
-
 # Setting up VIM
 
 # Setup Pathogen to manage your plugins
