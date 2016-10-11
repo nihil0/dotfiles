@@ -18,7 +18,7 @@ mv powerline ~/.vim/bundle/
 git clone --recursive https://github.com/davidhalter/jedi-vim.git
 mv jedi-vim ~/.vim/bundle/
 # Set up ftplugins
- 
+cp -r ftplugin ~/.vim/ 
  
 #Clean up
-#rm -rf dotfiles
+rm -rf dotfiles
