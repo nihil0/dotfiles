@@ -1,16 +1,25 @@
+# Copy tmux conf and vimrc 
+cp .tmux.conf ~/
+cp .vimrc ~/
 
-#Setup Pathogen to manage your plugins
+
+# Setting up VIM
+
+# Setup Pathogen to manage your plugins
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -so ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
 # Setup solarized colors
 git clone git://github.com/altercation/vim-colors-solarized.git
 mv vim-colors-solarized ~/.vim/bundle/
-#Install powerline
+# Install powerline
 git clone https://github.com/powerline/powerline.git
 mv powerline ~/.vim/bundle/
-#Install jedi-vim
+# Install jedi-vim
 git clone --recursive https://github.com/davidhalter/jedi-vim.git
 mv jedi-vim ~/.vim/bundle/
+# Set up ftplugins
+ 
+ 
 #Clean up
-rm -rf dotfiles
+#rm -rf dotfiles
