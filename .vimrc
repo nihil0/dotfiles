@@ -132,12 +132,11 @@ set expandtab
 
 " ================ Solarized ===========================
 " solarized settings
-set t_Co=256
+set t_Co=16
 syntax enable
 set hlsearch
 set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
+"let g:solarized_termcolors=256
 colorscheme solarized
 
 
